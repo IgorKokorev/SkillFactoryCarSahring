@@ -1,0 +1,89 @@
+2023-07-14 15:26:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVAILABILITY" not found; SQL statement:
+UPDATE car SET availability = false
+WHERE id = 3); [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1274)
+	at org.h2.command.Parser.parseUpdateSetClause(Parser.java:1325)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1290)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1005)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:164)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at carsharing.db.CarDAOImpl.updateAvailability(CarDAOImpl.java:129)
+	at carsharing.CustomerService.companyMenu(CustomerService.java:118)
+	at carsharing.CustomerService.rentACar(CustomerService.java:95)
+	at carsharing.CustomerService.customerMenu(CustomerService.java:45)
+	at carsharing.CustomerService.loginCustomer(CustomerService.java:29)
+	at carsharing.Main.startApp(Main.java:47)
+	at carsharing.Main.main(Main.java:31)
+2023-07-14 15:33:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVAILABILITY" not found; SQL statement:
+UPDATE car SET availability = false
+WHERE id = 3); [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1274)
+	at org.h2.command.Parser.parseUpdateSetClause(Parser.java:1325)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1290)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1005)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:164)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at carsharing.db.CarDAOImpl.updateAvailability(CarDAOImpl.java:129)
+	at carsharing.CustomerService.companyMenu(CustomerService.java:118)
+	at carsharing.CustomerService.rentACar(CustomerService.java:95)
+	at carsharing.CustomerService.customerMenu(CustomerService.java:45)
+	at carsharing.CustomerService.loginCustomer(CustomerService.java:29)
+	at carsharing.Main.startApp(Main.java:47)
+	at carsharing.Main.main(Main.java:31)
+2023-07-14 15:34:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVAILABILE" not found; SQL statement:
+UPDATE car SET availabile = false
+WHERE id = 3); [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1274)
+	at org.h2.command.Parser.parseUpdateSetClause(Parser.java:1325)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1290)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1005)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:164)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at carsharing.db.CarDAOImpl.updateAvailability(CarDAOImpl.java:129)
+	at carsharing.CustomerService.companyMenu(CustomerService.java:118)
+	at carsharing.CustomerService.rentACar(CustomerService.java:95)
+	at carsharing.CustomerService.customerMenu(CustomerService.java:45)
+	at carsharing.CustomerService.loginCustomer(CustomerService.java:29)
+	at carsharing.Main.startApp(Main.java:47)
+	at carsharing.Main.main(Main.java:31)
+2023-07-14 15:36:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CAR SET AVAILABLE = FALSE
+WHERE ID = 3)[*];"; SQL statement:
+UPDATE car SET available = false
+WHERE id = 3); [42000-200]
